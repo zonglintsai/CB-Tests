@@ -1,4 +1,4 @@
-# iOS APP automation
+# iOS Web Automation
 
 ## Prerequisites
 
