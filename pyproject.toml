@@ -1,0 +1,22 @@
+[project]
+name = "cb-web-testing"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Frank Tsai",email = "kayheyhey@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "appium-python-client (>=2.7.1,<4.0.0)",
+    "robotframework (>=7.2.2,<8.0.0)",
+    "robotframework-appiumlibrary (>=2.1.0, <3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cb_web_testing", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
