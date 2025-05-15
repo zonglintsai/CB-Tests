@@ -14,5 +14,4 @@ Element Class Attribute Should Match Regexp
     [Arguments]  ${element}  ${regexp}
     Element Attribute Should Match  ${element}  class  ${regexp}  regexp=True
     Scroll Element Into View  ${element}
-    Swipe By Percent  50  20  50  80
     Capture Page Screenshot

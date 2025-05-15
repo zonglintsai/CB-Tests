@@ -1,2 +1,3 @@
 *.html
 *.xml
+.DS_Store

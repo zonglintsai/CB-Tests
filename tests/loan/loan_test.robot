@@ -8,7 +8,7 @@ Suite Teardown  Close Appium
 
 *** Test Cases ***
 Loan Calculation Success
-    [Tags]  Q
+    [Tags]  Q  happy
     Given Go To Url  ${LOAN_PAGE}
     When Wait And Click  ${CITY_TAIPEI_OPTION}
     When Wait And Click  ${DISTRICT_XINYI_OPTION}
@@ -22,6 +22,7 @@ Loan Calculation Success
     Then Element Text Should Be  ${BORROW_MAX}  1,056萬
 
 Reset Loan Calculation Success
+    [Tags]  happy
     Given Go To Url  ${LOAN_PAGE}
     When Wait And Click  ${CITY_TAIPEI_OPTION}
     When Wait And Click  ${DISTRICT_XINYI_OPTION}

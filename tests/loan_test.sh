@@ -19,8 +19,8 @@ else
             echo "✅ Appium server is already running."
             break
         else
-            echo "⚠️ Appium server not ready yet. Retrying in 3 seconds..."
-            sleep 3
+            echo "⚠️ Appium server not ready yet. Retrying in 5 seconds..."
+            sleep 5
         fi
     done
 
@@ -28,5 +28,4 @@ else
 fi
 
 poetry run robot --outputdir "tests/loan" tests/loan/loan_test.robot
-sleep 3
 open "$PWD/tests/loan/log.html"
